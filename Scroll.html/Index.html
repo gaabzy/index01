@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html id="top">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Scroll CSS </title>
+	<style type="text/css">
+		html{
+			scroll-behavior: smooth;
+		}
+		a{
+			display: inline-block;
+			width: auto;
+			text-decoration: none;
+			font-size: 1.3em;
+		}
+		nav, scroll-container {
+			display: block;
+			margin: 0 auto;
+			text-align: center;
+		}
+		nav{
+			width: 600px;
+			padding: : 5px;
+			border: 1px solid black;
+		}
+		scroll-container {
+			width: 800px;
+			height: auto;
+			position: relative;
+		}
+		scroll-page{
+			border: 1px solid blue;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+			font-size: 2em;
+			margin:15px;
+		}
+
+		#topo{
+			position: absolute;
+			bottom: 15px;
+			right: 25px;
+		}
+	</style>
+
+</head>
+<body>
+	<nav>
+		<a href="#page-1">Seção 01</a>
+		<a href="#page-2">Seção 02</a>
+		<a href="#page-3">Seção 03</a>
+	</nav>
+	<scroll-container>
+		<scroll-page id="page-1">
+			<h2>Texto 01</h2> <hr>
+			Dois pacientes com fibrose cística se apaixonam, apesar das regras do hospital afirmarem que eles devem manter 1,5 metros de distância entre si. Se voce lerr e assistir o filme ficara mas detalhado e voce percebera que e uma perfeicao de filme, pra quem gosta de romace sera uma aventrura gigantesca e se sentirar nas nuvens, mas tem um final triste e te fara chorar.
+		</scroll-page>
+    
+		<scroll-page id="page-2"> 
+			<h2>Texto 02</h2> <hr>
+			Um grupo de crianças se une para investigar o misterioso desaparecimento de vários jovens em sua cidade. Eles descobrem que o culpado é Pennywise, um palhaço cruel que se alimenta de seus medos e cuja violência teve origem há vários séculos. Mas se voce tiver coragem de ler o livro ficara mas facil de entender, mas se voce nao tiver estomago para coisas pessadas nao leia, ficara desconfortavel e se sentirar mal. Pois o livro e bem detalhado e ha coisas que nao aperecem no filme.
+			<a href="#page-1">Seção 01</a>
+		</scroll-page>
+	
+		<scroll-page id="page-3">
+			<h2>Texto 03</h2> <hr>
+			Supernatural é uma série de TV norte-americana de fantasia sobrenatural transmitida originalmente pelo canal The CW. A trama acompanha os irmãos Sam e Dean Winchester que, há 20 anos, perderam a mãe em um trágico e misterioso acidente no qual as forças sobrenaturais estiveram envolvidas. Alem de ser uma serie boa, tem muitas temporadas e mostra um mundo diferente do habitual, faz voce viver varias aventuras sen sair do lugar.
+			<a href="#page-2">Seção 02</a>
+		</scroll-page>
+		<a id="topo" href="#topo">Home</a>
+	</scroll-container>
+
+</body>
+</html>
